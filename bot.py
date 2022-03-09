@@ -16,7 +16,6 @@ async def on_ready():
 async def on_message(message):
     channel = message.channel
     msg = message.content
-    print(message)
 
     if 'd' in message.content and message.content[0].isdecimal:
         dice = diceroll.roll(msg)
